@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Aula 1 - Java Script </title>
+<meta charset="UTF-8">
+<script>
+alert("Olá!Sejam Bem Vindos!\n"+ Date());
+/* alert mostra mensagem ao usuario como um pop-up */
+/* dentro do alert só pode \n para pular linha */
+// contrabarra n para pular linha
+
+// + para chamar função, concatenar(juntar ex: 10+2=102) e para somar
+
+// comando Date mostra o ano, mes, dia e hora local de brasilia
+
+// <-- para comentário de uma linha no java script
+
+/* <-- para comentário com mais de uma linha no java script */
+
+document.write("<font color=#FF00FF size=10>Olá!Sejam Bem Vindos!</font><br>"+ Date());
+// document.write para mostrar mensagem no corpo da pagina
+
+//tipos de variaveis: string, number e boolean
+/* em java script existe 3 maneiras para se declarar uma variavel:
+Exemplos:
+varnome="Jojoba"
+var_nome="Jojoba"
+var$nome="Jojoba"(em php so se usa essa forma para chamar uma variavel */
+
+var nome1="Jojoba\n";
+var _idade="20\n";
+var $email="jojobinha@hotmail.com";
+alert(nome1 + _idade + $email);
+document.write("<br>" + "Nome:" + nome1 + "<br>" + "Idade:" + _idade + "<br>" + "Email:" + $email);
+
+// scape de caracteres
+var nome2="Jojo\u00A0binha";/* \u00A0 para dar espaço tanto no alerta quanto no document*/
+alert(nome2);
+document.write("<br>" + nome2);
+
+var nome3="Jojo\//binha";
+alert(nome3);
+document.write("<br>" + nome3);
+
+// usando o comando prompt para solicitar que o usuario insira dados
+// o prompt é somente para o Alert
+var $nome4=prompt("Qual o seu nome?");
+alert("Prazer em conhece-la(o) " + $nome4);
+document.write("<br>Prazer em conhece-lo" + $nome4 + "\//" + _idade);
+
+// Operadores Aritméticos: Soma, Subtração, Divisão e Multiplicação
+
+// EXEMPLO DE SOMA
+var soma1=10+5;
+alert(" A soma dos numeros é:" + soma1);
+document.write("<br>A soma dos numeros é:" + soma1);
+
+//EXEMPLO DE SUBTRAÇÃO
+var sub1=10.5-5;
+alert("A subtração dos numeros é:" + sub1);
+document.write("<br>A subtração dos numeros é:" + sub1);
+
+//EXEMPLO DE MULTIPLICAÇÃO
+var mult1=10*5;
+alert("A multiplicação dos numeros é:" + mult1);
+document.write("<br>A multiplicação dos numeros é:" + mult1);
+
+//EXEMPLO DE DIVISÃO
+var div1=10/5;
+alert("A divisão dos numeros é:" + div1);
+document.write("<br>A divisão dos numeros é:" + div1);
+
+//RESTO DA DIVISÃO
+var mod=30%10;
+alert("O resto da divisãoo é:" + mod);
+document.write("<br>O resto da divisão é:" + mod);
+
+//alert e document para organizar
+alert("Realizando as operações com CONCATENAÇÃO");
+document.write("<br>Realizando as operações com CONCATENAÇÃO");
+
+//OUTRAS MANEIRAS DE RESOLVER SOMA, SUB E ETC
+
+//EXEMPLO DE CONCATENAÇÃO
+// houve a concatenação pq os valores estao entre ()
+var soma2="10"+"5";
+alert(" Dez dezenas mais 5 unidades:" + soma2);
+document.write("<br>Dez dezenas mais 5 unidades:" + soma2);
+
+//soma
+alert("A soma dos numeros é:\u00A0" + (10+5));
+document.write("<br>A soma dos numeros é:\u00A0" + (10+5));
+
+//subtração
+alert("A subtração dos numeros é:\u00A0" + (10-5));
+document.write("<br>A subtração dos numeros é:\u00A0" + (10-5));
+
+//multiplicação
+alert("A multiplicação dos numeros é:\u00A0" + (10*5));
+document.write("<br>A multiplicação dos numeros é:\u00A0" + (10*5));
+
+//divisão
+alert("A divisão dos numeros é:\u00A0" + (10/5));
+document.write("<br>A divisão dos numeros é:\u00A0" + (10/5));
+
+// Usando o parseInt somente para soma
+var n1=parseInt(prompt("Entre com valor de n1:"));
+var n2=parseInt(prompt("Entre com o valor de n2:"));
+var $somat=n1+n2;
+alert("A soma de n1 + n2 é:\u00A0" + $somat);
+document.write("<br>A soma de n1 + n2 é:\u00A0" + $somat);
+
+</script>
+</head>
+<body>
+</body>
+</html>
