@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aula 7</title>
+<meta charset="UTF-8">
+<script src="aula7.js"></script>
+</head>
+<body>
+	<h1><center>Calculadora</center></h1>
+<center><input type="text" id="visor" size=27 class="visor"/></center>
+<center><table border=4 cellpadding=4 cellspacing=10></center>
+	<tr>
+		<td><input type="submit" class="botao" id="1" value=" 1 " onclick="preencher('1');" /></td>
+		<td><input type="submit" class="botao" id="2" value=" 2 " onclick="preencher('2');" /></td>
+		<td><input type="submit" class="botao" id="3" value=" 3 " onclick="preencher('3');" /></td>
+		<td><input type="submit" class="botao" id="/" value=" / " onclick="preencher('/');" /></td>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="4" value=" 4 " onclick="preencher('4');" /></td>
+		<td><input type="submit" class="botao" id="5" value=" 5 " onclick="preencher('5');" /></td>
+		<td><input type="submit" class="botao" id="6" value=" 6 " onclick="preencher('6);" /></td>
+		<td><input type="submit" class="botao" id="*" value=" * " onclick="preencher('*');" /></td>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="7" value=" 7 " onclick="preencher('7');" /></td>
+		<td><input type="submit" class="botao" id="8" value=" 8 " onclick="preencher('8');" /></td>
+		<td><input type="submit" class="botao" id="9" value=" 9 " onclick="preencher('9');" /></td>
+		<td><input type="submit" class="botao" id="+" value=" + " onclick="preencher('+');" /></td>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="0" value=" 0 " onclick="preencher('0');" /></td>
+		<td><input type="submit" class="botao" id="=" value=" = " onclick="calcular('=');" /></td>
+		<td><input type="submit" class="botao" id="C" value=" C " onclick="limpar();" /></td>
+		<td><input type="submit" class="botao" id="-" value=" - " onclick="preencher('-');" /></td> 	
+	</tr>
+</table><hr></hr>
+
+
+<fieldset id="imcc"><legend>Calculo do IMC</legend>
+<label for="a">Quilos:<input type="text" id="peso" /></label>
+<label for="b">Altura:<input type="text" id="altura" /></label>
+<label for="c">IMC:<input type="text" id="imc" /></label>
+<input type="submit" class="botao" value="Calcular " onclick="Calc();" />
+</fieldset>
+<table border=4 cellpadding=4 cellspacing=6>
+<tr>
+	<th>IMC</th>
+	<th>Homem</th>
+	<th>Mulher</th>
+</tr>
+<tr>
+<td>Baixo Peso</td>
+<td>-20</td>
+<td>-19</td>
+</tr>
+<tr>
+<td>Peso Normal</td>
+<td>20 a 29,9</td>
+<td>19 a 23,9</td>
+</tr>
+<tr>
+<td>Obesidade Leve</td>
+<td>25 a 29,9</td>
+<td>24 a 28,9</td>
+</tr>
+<tr>
+<td>Obesidade Moderada</td>
+<td>30 a 9,9</td>
+<td>29 a 38,9</td>
+</tr>
+<tr>
+<td>Obesidade Mórbida</td>
+<td>+43</td>
+<td>+39</td>
+</tr>	
+</table>
+</body>
+</html>
